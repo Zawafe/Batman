@@ -1,0 +1,14 @@
+p{
+    position: relative;
+    right: -500px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: green;
+    width: 100%;
+}
