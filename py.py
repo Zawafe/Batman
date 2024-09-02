@@ -1,8 +1,3 @@
-# def say_hi(name, age):
-#     print("Hello " + name + ", you are " + str(age))
-
-# say_hi(name="Mike", age=35)
-# say_hi(name="Steve", age=39)
 
 # Contact Book
 contacts = []
@@ -23,8 +18,10 @@ def menu():
 def add_contact():
     name = input("Enter name: ")
     phone = input("Enter phone number: ")
+    add = input("Enter your address:")
     email = input("Enter email address: ")
     contacts.append({
+        'add':add,
         'name': name,
         'phone': phone,
         'email': email
@@ -61,6 +58,7 @@ def update_contact():
             print(f"\nUpdating Contact: Name: {contact['name']}, Phone: {contact['phone']}, Email: {contact['email']}")
             contact['name'] = input("Enter new name: ")
             contact['phone'] = input("Enter new phone number: ")
+            contact['email2'] = input("address: ")
             contact['email'] = input("Enter new email address: ")
             print(f"Contact for {contact['name']} updated successfully.")
             found = True
